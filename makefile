@@ -4,8 +4,8 @@ init:
 		echo "Remove db/development.sqlite3"; \
 	fi;
 	cp db/development.sqlite3.tmp db/development.sqlite3
-oneshot:
-	rvm use 3.0.6
+# rvm use 3.0.6 && make up
+up:
 	bundle
 	npm install
 	rails assets:precompile
