@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   click(event) {
-    alert("hi")
+    alert("제 Alert 이벤트를 지워 보세요")
     this.element.setAttribute("contenteditable", "true")
     this.element.focus()
   }
